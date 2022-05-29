@@ -2,4 +2,20 @@
 FROM stocks;
 SELECT *
 FROM Stocks
-ORDER BY Price ASC;</sql><current_tab id="0"/></tab_sql></sqlb_project>
+WHERE name = 'Netflix Inc';
+SELECT *
+FROM Stocks
+WHERE Price &gt;= 100;
+SELECT *
+FROM Stocks
+WHERE Price BETWEEN 100 AND 140;
+SELECT *
+FROM Stocks
+ORDER BY Price ASC;
+SELECT AVG(Price), MIN(Price), MAX(Price), Name
+FROM Stocks
+GROUP BY Name;
+SELECT *
+FROM Stocks
+ORDER BY datetime;
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
